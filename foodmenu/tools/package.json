@@ -1,0 +1,27 @@
+{
+  "name": "pocketbase-menu-seeder",
+  "version": "1.0.0",
+  "description": "Seed 100 Thai menu items to PocketBase using Faker.js",
+  "type": "module",
+  "main": "seed_menus.mjs",
+  "scripts": {
+    "seed": "node tools/seed_menus.mjs",
+    "seed:dev": "NODE_ENV=development node tools/seed_menus.mjs"
+  },
+  "keywords": [
+    "pocketbase",
+    "faker",
+    "seeder",
+    "thai-menu"
+  ],
+  "author": "Yanee",
+  "license": "MIT",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "pocketbase": "^0.21.3"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
