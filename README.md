@@ -1,72 +1,16 @@
-## ขั้นตอนการติดตั้งและรันโปรเจกต์
+# foodmenu
 
-### 1. clone Github repo
+A new Flutter project.
 
-```bash
-https://github.com/yaneekumsudsang/FinalProject.git
-```
-```bash
-cd foodmenu
-```
+## Getting Started
 
-### 2. ติดตั้ง Dependencies ของ Flutter
+This project is a starting point for a Flutter application.
 
-```bash
-flutter pub get
-```
+A few resources to get you started if this is your first Flutter project:
 
-### 3. ติดตั้ง dependencies สำหรับ seed script
-```bash
-npm install node-fetch form-data @faker-js/faker
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-```
-
-### 4. รัน PocketBase
-
-```bash
-pocketbase serve
-```
-
-### 5. สร้าง Collection ชื่อ menus
-###### 🗂️ โครงสร้าง Collection: `menus`
-| **Field** | **Type** |
-|:----------:|:--------:|
-| Name | text |
-| Price | number |
-| Category | text |
-| Available | bool |
-| ImageUrl | url |
-
-### 6. ตั้งค่า Permissions ให้ทุก rule (List, View) เป็น
-
-```bash
-true
-```
-เพื่ออนุญาตให้แอป Flutter ดึงข้อมูลได้โดยไม่ต้องล็อกอิน
-
-### 7. เพิ่มข้อมูลจำลองเข้า PocketBase
-###### เพิ่มข้อมูลจำลองเข้า PocketBase
-
-```bash
-cd tools
-```
-```bash
-npm install
-```
-```bash
-node seed_menus.mjs
-```
-###### สคริปต์นี้จะสุ่มเมนูอาหาร 100 รายการ สคริปต์นี้จะสุ่มเมนูอาหาร 100 รายการ
-
-### 8. รันแอป Flutter
-```bash
-cd ..
-```
-```bash
-flutter run -d chrome
-```
-
-#### ผู้พัฒนา
-##### Yanee Kumsudsang
-###### Data Science and Software Innovation – Ubon Ratchathani University
-###### email: yanee.ku.65@ubu.ac.th
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
