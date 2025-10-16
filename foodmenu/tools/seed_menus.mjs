@@ -58,16 +58,16 @@ function generateMenuData() {
   return { name, price, category, available, imageUrl };
 }
 
-// 🚀 ฟังก์ชันหลัก
+//  ฟังก์ชันหลัก
 async function main() {
-  console.log('🚀 กำลังเชื่อมต่อ PocketBase...\n');
+  console.log('กำลังเชื่อมต่อ PocketBase...\n');
   
   try {
     await pb.admins.authWithPassword(ADMIN_EMAIL, ADMIN_PASS);
-    console.log('✅ เข้าสู่ระบบสำเร็จ!\n');
+    console.log('เข้าสู่ระบบสำเร็จ!\n');
   } catch (err) {
-    console.error('❌ เข้าสู่ระบบล้มเหลว:', err.message);
-    console.error('💡 กรุณาตรวจสอบ email และ password ของ Admin\n');
+    console.error(' เข้าสู่ระบบล้มเหลว:', err.message);
+    console.error('กรุณาตรวจสอบ email และ password ของ Admin\n');
     return;
   }
 
@@ -75,7 +75,7 @@ async function main() {
   let successCount = 0;
   let errorCount = 0;
 
-  console.log(`🍜 เริ่มสร้างเมนูจำนวน ${totalMenus} รายการ...\n`);
+  console.log(`เริ่มสร้างเมนูจำนวน ${totalMenus} รายการ...\n`);
   console.log('─'.repeat(60));
 
   for (let i = 0; i < totalMenus; i++) {
